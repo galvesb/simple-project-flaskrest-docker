@@ -1,0 +1,10 @@
+[default]
+SECRET_KEY="@jinja {{env.SECRET_KEY}}"
+PICPAY_TOKEN="@jinja {{env.PICPAY_TOKEN}}"
+SQLALCHEMY_TRACK_MODIFICATIONS=false
+
+[development]
+SQLALCHEMY_DATABASE_URI="mysql://root:root@db/main"
+
+[testing]
+SQLALCHEMY_DATABASE_URI="sqlite://"
